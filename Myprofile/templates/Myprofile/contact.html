@@ -1,0 +1,27 @@
+{% extends "portfolio/common.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'Myprofile/contact.css' %}">
+
+    <div class="header text-center">
+        <h1>Contact us</h1>
+    </div>
+
+    <div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h1 class="mb-4">Contact Us</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "portfolio/common.html" %}
+{% load static %}
+
+{% block content %}
+<div class="header text-center">
+    <h1>Notes</h1>
+</div>
+
+<div class="container mt-4">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Created_at</th>
+                <th>Download</th>
+                <th>View File</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for note in notes %}
+            <tr>
+                <td>{{ note.title }}</td>
+                <td>{{ note.timestamp }}</td>
+                <td>
+                    <a href="{% url 'notes:note-download' note.pk %}" class="btn btn-primary btn-sm">Download</a>
+                </td>
+                <td>
+                    <a href="{% url 'notes:display-pdf' note.pk %}" class="btn btn-primary btn-sm">View</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

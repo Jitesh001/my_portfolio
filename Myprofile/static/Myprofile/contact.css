@@ -1,0 +1,48 @@
+/* Custom CSS for the contact form */
+    .contact-form {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px; /* Add margin to separate from the header */
+        margin-bottom: 20px; /* Add margin to separate from the footer */
+    }
+
+    .contact-form h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .contact-form button {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Style form input fields and labels */
+    .contact-form label {
+        font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+    }
+
+    /* Style the submit button */
+    .contact-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }

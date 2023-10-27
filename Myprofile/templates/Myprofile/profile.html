@@ -1,0 +1,64 @@
+{% extends "portfolio/common.html" %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Myprofile/profile.css' %}">
+
+    <div class="header text-center">
+        <h1>Profile</h1>
+    </div>
+    
+    <div class="container profile-section" style="padding-left: 15px; padding-right: 15px;">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Jitesh Shewale</h2>
+                <p>Mumbai, Maharashtra-India</p>
+                <h3>Education</h3>
+                <p>BE (Electronics & Telecommunication)<br>
+                Mumbai University<br>
+                CGPA: 9.11/10<br>
+                Duration: 2017-2021</p>
+                <h3>Work Experience</h3>
+                <p>Tata Consultancy Services (2021-Current)<br>
+                Mumbai, India<br>
+                Responsibilities:
+                <ul class="responsibilities-list">
+                    <li>Utilized Python with PyODBC to query MySQL databases and authenticate connections.</li>
+                    <li>Enhanced MySQL database performance by modifying tables, views, and stored procedures.</li>
+                    <li>Collaborated with the DBA team to deploy changes in the Redshift database.</li>
+                    <li>Developed Autosys jobs, Unix scripts, and email templates using Python and Jinja2.</li>
+                    <li>Managed onshore development teams and applied OOP principles in Python scripting.</li>
+                    <li>Employed various Python libraries, including pandas, sys, OS, shutil, and subprocess.</li>
+                    <li>Developed YAML files to store application-related information.</li>
+                    <li>Integrated Veracode Scan into Jenkins for automated code review.</li>
+                    <li>Proficient in BitBucket, SourceTree, PyCharm, and other development tools.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3>Certifications</h3>
+                <ul class="certification-list">
+                    <li><a href="https://www.linkedin.com/in/jitesh-shewale-41ba68195/" target="_blank">Data Analysis with Python by IBM, Coursera</a></li>
+                    <li><a href='https://www.linkedin.com/in/jitesh-shewale-41ba68195/' target='blank_'>Django Masterclass, Udemy</a></li>
+                    <li><a href='https://www.linkedin.com/in/jitesh-shewale-41ba68195/' target='blank_'>Advanced SQL Retrieval Queries Coursera</a></li>
+                    <li><a href='https://www.credly.com/badges/5c2beb9a-c8a6-4dcb-893a-726a8e01e65b/linked_in_profile' target='blank_'>AWS Cloud Practitioner</a></li>
+                </ul>
+                <h3>Technical Skills</h3>
+                <ul class="technical-skills">
+                    <li>Languages: Python, SQL, Unix, Java Basic</li>
+                    <li>Frameworks: Django</li>
+                    <li>Databases: MsSQL, Oracle, Redshift</li>
+                    <li>Tools: Bitbucket, SourceTree, Putty, Pycharm</li>
+                </ul>
+                <h3>Achievements</h3>
+                <ul class="achievement-list">
+                    <li>Gold Badge in Competitive Programming python Hackerrank, 2020</li>
+                    <li>Secured 277th rank in national coding scaler challenge, 2020</li>
+                </ul>
+                <h3>Interests and Hobbies</h3>
+                <p>I have been working as an Informatica MDM Developer at TCS for the past 1.9 years, where I implemented master data management solutions using Informatica tools and Python shell scripts. Since 2019, I have been actively exploring Python, SQL, Django, and Data Science through various online resources. I am highly interested in pursuing further opportunities, and given the chance, I am enthusiastic about delving deeper into the realms of Data Science and ML. In my free time, I enjoy [mention your hobbies here].</p>
+                <a href="{% url 'resume-download' 'resume' %}" class="btn btn-primary">Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "portfolio/common.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'project/project.css' %}">
+
+<div class="header text-center">
+    <h1>My Projects</h1>
+</div>
+
+<div class="container project-list mt-4">
+    <div class="project-container">
+        {% for project in projects %}
+        <div class="project-card">
+            <img src="{{ project.image.url }}" class="project-image" alt="{{ project.title }}">
+            <div class="project-details">
+                <h5 class="project-title">{{ project.title }}</h5>
+                <p class="project-description">{{ project.description }}</p>
+                <a href="{{ project.code_link }}" target="_blank" class="project-link">Code</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

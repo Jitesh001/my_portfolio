@@ -1,0 +1,21 @@
+
+/* Custom CSS for the Thank You page */
+    .thank-you {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .thank-you h1 {
+        font-size: 24px;
+        color: #333;
+    }
+
+    .thank-you p {
+        color: #555;
+    }
+
